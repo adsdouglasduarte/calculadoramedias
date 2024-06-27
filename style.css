@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+
+
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      
+}
+
+body {
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 36px;
+    height: 36px;
+    margin: 0px 16px 20px 0px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 40px;
+    margin-left: 16px;
+}
+
+
+.menuNav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.menuNav input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.menuNav #enviar {
+    background-color: #009432;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+
+.contentCalc {
+    width: 100%;
+    max-width: 800px;
+}
+
+table {
+    max-width: 800px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd; /* Adicione bordas para as células */
+}
+
+.row-table {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.row-tableContent {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer-tableContent {
+    font-weight: bold;
+    border-top: 2px solid black;
+}
+
+.emoji {
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+.aprovado {
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 4px 0px;
+    color: #fff;
+    background-color:#009432;
+}
+
+.reprovado {
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 4px 0px;
+    color: #fff;
+    background-color:red;
+}
+
+@media (max-width: 600px) {
+    .title, .menuNav, .contentCalc {
+        width: 100%;
+    }
+
+    .row-table,
+    .row-tableContent,
+    .footer-tableContent {
+        grid-template-columns: 1fr;
+    }
+
+    .row-table th,
+    .row-tableContent td,
+    .footer-tableContent td {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .menuNav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menuNav input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menuNav #enviar {
+        width: 100%;
+    }
+}

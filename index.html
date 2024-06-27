@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <img class="logo" src="./images/logo.png" alt="logo do site">
+        <h1 class="roboto-bold">Calculadora de Médias</h1>
+    </div>
+
+    <form id="formMedias" class="menuNav">
+        <input required id="atividade" type="text" placeholder="Insira a atividade">
+        <input required id="nota" type="number" min="0" max="10" placeholder="Nota">
+        <input id="enviar" type="submit" value="Adicionar+">
+    </form>
+
+    <div class="contentCalc">
+        <table>
+            <thead>
+                <tr class="row-table">
+                    <th>Atividade</th>
+                    <th class="nota-table">Nota</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr class="footer-tableContent">
+                    <td>Média</td>
+                    <td id="notaMedia"></td>
+                    <td><span class="resultado">Resultado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
